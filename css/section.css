@@ -1,0 +1,231 @@
+section {
+  background-color: #1e1c27;
+  width: 60%;
+  padding: 2rem 0.5rem;
+}
+section ul {
+  list-style-type: none;
+  width: 100%;
+}
+section ul li a {
+  text-decoration: none;
+}
+section ul li a:hover {
+  text-decoration: underline;
+}
+
+section.anime {
+  display: flex;
+  justify-content: center;
+}
+section.anime .card {
+  border-radius: 8px;
+  background-color: #282a36;
+  padding: 0.5rem;
+  width: 18%;
+  margin: auto;
+}
+section.anime .card img {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+section.anime .card h4 {
+  color: white;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+section.anime .card a {
+  text-decoration: none;
+}
+
+section.listAnime {
+  text-align: left;
+  display: grid;
+  padding: 2rem 1rem;
+}
+section.listAnime h3.judulAnime {
+  background-color: #282a36;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+section.listAnime ul.listAnime li h4 {
+  border-bottom: 2px solid white;
+  margin-top: 0.5rem;
+  padding: 0 0.1rem;
+}
+section.listAnime ul.listAnime li ul li:first-child {
+  padding-top: 0.5rem;
+}
+section.listAnime ul.listAnime li ul li:last-child {
+  padding-bottom: 0.5rem;
+}
+section.listAnime ul.listAnime li ul li {
+  list-style: disc inside;
+  padding: 0 0.3rem;
+}
+section.listAnime ul.listAnime li ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+section.genreAnime {
+  text-align: center;
+  display: grid;
+  padding: 2rem 1rem;
+}
+section.genreAnime ul.genreAnime {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+section.genreAnime ul.genreAnime li {
+  padding: 0.25rem;
+}
+section.genreAnime ul.genreAnime li a {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: #282a36;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+section.daftarEpisodeAnime {
+  text-align: left;
+  display: grid;
+  padding: 2rem 1rem;
+}
+section.daftarEpisodeAnime img.wppAnime {
+  width: 100%;
+}
+section.daftarEpisodeAnime h3.judulAnime {
+  background-color: #282a36;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+section.daftarEpisodeAnime ul.detailInfoAnime li {
+  background-color: #282a36;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+section.daftarEpisodeAnime ul.detailInfoAnime li span {
+  font-weight: bold;
+}
+section.daftarEpisodeAnime ul.detailInfoAnime li a {
+  color: #009be4;
+}
+section.daftarEpisodeAnime p.sinopsis {
+  width: 100%;
+  text-align: justify;
+  margin: 1rem 0;
+}
+section.daftarEpisodeAnime ul.linkEpisode li {
+  border-bottom: 2px solid white;
+  margin-top: 0.5rem;
+}
+section.daftarEpisodeAnime ul.linkEpisode li a {
+  margin: 0 1rem;
+  color: white;
+  text-align: justify;
+}
+
+section.videoAnime {
+  padding: 1rem 0.5rem 2rem;
+  display: grid;
+}
+section.videoAnime h3.judulAnime {
+  background-color: #282a36;
+  padding: 0.5rem;
+  text-align: left;
+}
+section.videoAnime ul.navEps {
+  display: flex;
+  align-items: center;
+  background-color: #282a36;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+section.videoAnime ul.navEps li {
+  flex: auto;
+  width: 25%;
+}
+section.videoAnime ul.navEps li a {
+  color: #f1f1f1;
+  text-align: center;
+}
+section.videoAnime ul.navEps select#episode {
+  margin: auto;
+  width: 90%;
+  font-size: 0.9rem;
+  background-color: transparent;
+  color: #f1f1f1;
+  padding: 0.5rem;
+}
+section.videoAnime ul.navEps select#episode option {
+  color: black;
+}
+
+section.infoAnime {
+  padding: 1rem 0.5rem 2rem;
+  display: grid;
+  grid-template-areas: "judul" "info";
+}
+section.infoAnime h3 {
+  grid-area: judul;
+  background-color: #282a36;
+  padding: 0.5rem;
+  text-align: left;
+  margin: 0 0 0.5rem 0;
+}
+section.infoAnime .info {
+  grid-area: info;
+  background-color: #282a36;
+  display: grid;
+  grid-template-areas: "img info info info" "img eps eps eps";
+  overflow: hidden;
+  padding: 1rem;
+}
+section.infoAnime .info img {
+  grid-area: img;
+  height: 16rem;
+  margin: auto 0;
+}
+section.infoAnime .info ul.detailInfoAnime {
+  height: 6rem;
+  grid-area: info;
+  list-style-type: none;
+  width: 100%;
+  text-align: justify;
+  background-color: #282a36;
+  font-size: 0.9rem;
+}
+section.infoAnime .info ul.detailInfoAnime li {
+  width: 100%;
+}
+section.infoAnime .info ul.detailInfoAnime li a {
+  color: #f1f1f1;
+  text-align: center;
+}
+section.infoAnime .info ul.linkEpisode {
+  background-color: #282a36;
+  grid-area: eps;
+  list-style-type: none;
+  width: 100%;
+  height: 10rem;
+  overflow-y: scroll;
+  font-size: 0.9rem;
+  border: 3px solid #f1f1f1;
+}
+section.infoAnime .info ul.linkEpisode li {
+  border-bottom: 2px solid white;
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+section.infoAnime .info ul.linkEpisode li a {
+  margin: 0 1rem;
+  color: white;
+  text-align: justify;
+}/*# sourceMappingURL=section.css.map */

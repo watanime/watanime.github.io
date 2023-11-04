@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  display: grid;
+  background-color: #16151d;
+  color: #fff;
+  grid-template-areas: "nav" "header" "about" "skill" "project" "footer";
+  text-align: center;
+}
+
+header,
+nav,
+section {
+  width: 60%;
+  margin: auto;
+}
+
+header {
+  font-size: 3rem;
+  padding: 2rem;
+  background-color: #1d1b26;
+  margin-bottom: 1.5rem;
+}
+
+nav {
+  border-bottom: 1px solid white;
+}
+nav h3 {
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  align-items: center;
+  background-color: #222;
+  padding: 0.6rem;
+}
+nav ul li {
+  text-align: left;
+  flex: auto;
+  width: 30%;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+nav ul li .searchAnime {
+  background-color: #1d1b26;
+  padding: 0.5rem 1rem;
+}
+nav ul li .searchAnime input.inputTextSearch {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  margin: auto;
+  background-color: transparent;
+  border: none;
+  font-weight: normal;
+  width: 80%;
+}
+
+footer {
+  background-color: #1d1b26;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 1.5rem 0 0;
+}/*# sourceMappingURL=main.css.map */
