@@ -33,6 +33,9 @@ header {
   background-color: #1d1b26;
   margin-bottom: 1.5rem;
 }
+header h1::before {
+  content: "WATANIME";
+}
 
 nav {
   border-bottom: 1px solid white;

@@ -43,10 +43,12 @@ section.listAnime {
   display: grid;
   padding: 2rem 1rem;
 }
-section.listAnime h3.judulAnime {
-  background-color: #282a36;
-  padding: 0.3rem;
-  margin-bottom: 0.5rem;
+section.listAnime ul.navListAnime {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.listAnime ul.navListAnime span {
+  padding: 0 0.5rem;
 }
 section.listAnime ul.listAnime li h4 {
   border-bottom: 2px solid white;
