@@ -77,7 +77,7 @@ body.dark-theme {
   flex-wrap: wrap;
   overflow: hidden;
   font-weight: var(--font-semi-bold);
-  margin: 0.2rem;
+  margin: 0.3rem;
 }
 
 .list_nav {
@@ -110,6 +110,10 @@ body.dark-theme {
   width: 1rem;
   text-align: center;
   font-size: var(--normal-font-size);
+}
+
+.garis_list_anime {
+  height: 0.2rem;
 }
 
 .list_nama_anime {

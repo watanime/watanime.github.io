@@ -130,6 +130,11 @@ img {
   height: auto;
 }
 
+hr {
+  background-color: var(--text-color);
+  border: none;
+}
+
 /* REUSABLE CSS CLASSES */
 .section {
   padding: 1rem 0;
@@ -163,24 +168,19 @@ img {
 }
 
 .garis_atas {
-  height: 0.3rem;
-  background-color: var(--first-color-second);
-  border: none;
   margin: 0.3rem 0 0;
 }
 
 .garis_bawah {
-  height: 0.3rem;
-  background-color: var(--first-color-second);
-  border: none;
   margin: 0 0 0.3rem;
 }
 
 .garis_atas_bawah {
-  height: 0.3rem;
-  background-color: var(--first-color-second);
-  border: none;
   margin: 0.3rem 0;
+}
+
+.garis_height_3 {
+  height: 0.3rem;
 }
 
 /* NAV */
@@ -360,18 +360,30 @@ img {
 /* ON GOING */
 .ongoing_card_container {
   grid-template-columns: repeat(2, minmax(0%, 50%));
+  grid-template-rows: repeat(auto, 280px);
   padding: 1rem 0;
 }
 
 .card_ongoing {
   width: 100%;
-  height: 280px;
+  height: auto;
+  position: relative;
+}
+
+.link_card_ongoing:hover {
+  background-color: var(--title-color);
+}
+
+.poster_anime {
+  width: 100%;
 }
 
 .anime_title_section {
-  position: relative;
-  height: 2.9rem;
-  top: -3.1rem;
+  position: absolute;
+  height: 3rem;
+  width: 100%;
+  right: 0;
+  bottom: 0;
   background-color: var(--body-color);
   opacity: 0.75;
   justify-content: center;
