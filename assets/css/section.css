@@ -1,233 +1,122 @@
-section {
-  background-color: #1e1c27;
-  width: 60%;
-  padding: 2rem 0.5rem;
-}
-section ul {
-  list-style-type: none;
-  width: 100%;
-}
-section ul li a {
-  text-decoration: none;
-}
-section ul li a:hover {
-  text-decoration: underline;
+/* VARIABLES CSS */
+:root {
+  --header-height: 3rem;
+  /* COLOR */
+  /* Change favorite color */
+  --hue-color: 220; /* Purple 250 - Green 142 - Blue 230 - Pink 340 */
+  /* HSL color Mode */
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 85%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  /* Font and typography */
+  --body-font: "Montserrat", sans-serif;
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.928rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  /* Font weight */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /* Margenes Bottom */
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  /* z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 }
 
-section.anime {
-  display: flex;
-  justify-content: center;
+/* Font size for Large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }
-section.anime .card {
-  border-radius: 8px;
-  background-color: #282a36;
-  padding: 0.5rem;
-  width: 18%;
-  margin: auto;
-}
-section.anime .card img {
-  width: 100%;
-  border-radius: 3px 3px 0 0;
-}
-section.anime .card h4 {
-  color: white;
-  font-weight: normal;
-  font-size: 0.9rem;
-}
-section.anime .card a {
-  text-decoration: none;
+/* Variable Dark theme */
+body.dark-theme {
+  /* HSL color Mode */
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
-section.listAnime {
-  text-align: left;
-  display: grid;
-  padding: 2rem 1rem;
-}
-section.listAnime ul.navListAnime {
+/* ANIME LIST */
+.nav_anime_list {
   display: flex;
   flex-wrap: wrap;
-}
-section.listAnime ul.navListAnime span {
-  padding: 0 0.5rem;
-}
-section.listAnime ul.listAnime li h4 {
-  border-bottom: 2px solid white;
-  margin-top: 0.5rem;
-  padding: 0 0.1rem;
-}
-section.listAnime ul.listAnime li ul li:first-child {
-  padding-top: 0.5rem;
-}
-section.listAnime ul.listAnime li ul li:last-child {
-  padding-bottom: 0.5rem;
-}
-section.listAnime ul.listAnime li ul li {
-  list-style: disc inside;
-  padding: 0 0.3rem;
-}
-section.listAnime ul.listAnime li ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 0.9rem;
-  text-align: justify;
-}
-
-section.genreAnime {
-  text-align: center;
-  display: grid;
-  padding: 2rem 1rem;
-}
-section.genreAnime ul.genreAnime {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-section.genreAnime ul.genreAnime li {
-  padding: 0.25rem;
-}
-section.genreAnime ul.genreAnime li a {
-  display: inline-block;
-  width: 100%;
-  padding: 0.5rem 0;
-  background-color: #282a36;
-  color: white;
-  font-size: 0.8rem;
-  text-align: center;
-}
-
-section.daftarEpisodeAnime {
-  text-align: left;
-  display: grid;
-  padding: 2rem 1rem;
-}
-section.daftarEpisodeAnime img.wppAnime {
-  width: 100%;
-}
-section.daftarEpisodeAnime h3.judulAnime {
-  background-color: #282a36;
-  padding: 0.3rem;
-  margin-bottom: 0.5rem;
-}
-section.daftarEpisodeAnime ul.detailInfoAnime li {
-  background-color: #282a36;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  font-size: 0.8rem;
-}
-section.daftarEpisodeAnime ul.detailInfoAnime li span {
-  font-weight: bold;
-}
-section.daftarEpisodeAnime ul.detailInfoAnime li a {
-  color: #009be4;
-}
-section.daftarEpisodeAnime p.sinopsis {
-  width: 100%;
-  text-align: justify;
-  margin: 1rem 0;
-}
-section.daftarEpisodeAnime ul.linkEpisode li {
-  border-bottom: 2px solid white;
-  margin-top: 0.5rem;
-}
-section.daftarEpisodeAnime ul.linkEpisode li a {
-  margin: 0 1rem;
-  color: white;
-  text-align: justify;
-}
-
-section.videoAnime {
-  padding: 1rem 0.5rem 2rem;
-  display: grid;
-}
-section.videoAnime h3.judulAnime {
-  background-color: #282a36;
-  padding: 0.5rem;
-  text-align: left;
-}
-section.videoAnime ul.navEps {
-  display: flex;
-  align-items: center;
-  background-color: #282a36;
-  padding: 0.6rem;
-  font-size: 0.9rem;
-}
-section.videoAnime ul.navEps li {
-  flex: auto;
-  width: 25%;
-}
-section.videoAnime ul.navEps li a {
-  color: #f1f1f1;
-  text-align: center;
-}
-section.videoAnime ul.navEps select#episode {
-  margin: auto;
-  width: 90%;
-  font-size: 0.9rem;
-  background-color: transparent;
-  color: #f1f1f1;
-  padding: 0.5rem;
-}
-section.videoAnime ul.navEps select#episode option {
-  color: black;
-}
-
-section.infoAnime {
-  padding: 1rem 0.5rem 2rem;
-  display: grid;
-  grid-template-areas: "judul" "info";
-}
-section.infoAnime h3 {
-  grid-area: judul;
-  background-color: #282a36;
-  padding: 0.5rem;
-  text-align: left;
-  margin: 0 0 0.5rem 0;
-}
-section.infoAnime .info {
-  grid-area: info;
-  background-color: #282a36;
-  display: grid;
-  grid-template-areas: "img info info info" "img eps eps eps";
   overflow: hidden;
-  padding: 1rem;
+  font-weight: var(--font-semi-bold);
+  margin: 0.2rem;
 }
-section.infoAnime .info img {
-  grid-area: img;
-  height: 16rem;
-  margin: auto 0;
+
+.list_nav {
+  float: left;
 }
-section.infoAnime .info ul.detailInfoAnime {
-  height: 6rem;
-  grid-area: info;
-  list-style-type: none;
-  width: 100%;
-  text-align: justify;
-  background-color: #282a36;
-  font-size: 0.9rem;
+
+.link_nav_list {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
 }
-section.infoAnime .info ul.detailInfoAnime li {
-  width: 100%;
+
+.link_nav_list:hover {
+  color: var(--first-color-alt);
 }
-section.infoAnime .info ul.detailInfoAnime li a {
-  color: #f1f1f1;
+
+.span_nav {
+  padding: 0 0.5rem;
+  font-weight: 900;
+}
+
+.anime_list {
+  margin: 1rem 0 0;
+}
+
+.list_huruf_abjad {
+  margin: 0.4rem 0;
+}
+
+.header_list_nama {
+  width: 1rem;
   text-align: center;
+  font-size: var(--normal-font-size);
 }
-section.infoAnime .info ul.linkEpisode {
-  background-color: #282a36;
-  grid-area: eps;
-  list-style-type: none;
-  width: 100%;
-  height: 10rem;
-  overflow-y: scroll;
-  font-size: 0.9rem;
-  border: 3px solid #f1f1f1;
+
+.list_nama_anime {
+  margin: 0 0 0 1rem;
 }
-section.infoAnime .info ul.linkEpisode li {
-  border-bottom: 2px solid white;
-  margin-top: 0.5rem;
-  text-align: justify;
-}
-section.infoAnime .info ul.linkEpisode li a {
-  margin: 0 1rem;
-  color: white;
-  text-align: justify;
+
+.link_list_nama_anime {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
 }/*# sourceMappingURL=section.css.map */

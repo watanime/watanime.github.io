@@ -162,6 +162,27 @@ img {
   gap: 1.5rem;
 }
 
+.garis_atas {
+  height: 0.3rem;
+  background-color: var(--first-color-second);
+  border: none;
+  margin: 0.3rem 0 0;
+}
+
+.garis_bawah {
+  height: 0.3rem;
+  background-color: var(--first-color-second);
+  border: none;
+  margin: 0 0 0.3rem;
+}
+
+.garis_atas_bawah {
+  height: 0.3rem;
+  background-color: var(--first-color-second);
+  border: none;
+  margin: 0.3rem 0;
+}
+
 /* NAV */
 .nav {
   width: 100%;
