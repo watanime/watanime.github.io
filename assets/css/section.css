@@ -71,6 +71,12 @@ body.dark-theme {
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 /* ANIME LIST */
 .nav_anime_list {
   display: flex;
@@ -109,7 +115,7 @@ body.dark-theme {
 .header_list_nama {
   width: 1rem;
   text-align: center;
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
 }
 
 .garis_list_anime {
@@ -121,6 +127,37 @@ body.dark-theme {
 }
 
 .link_list_nama_anime {
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   color: var(--text-color);
+}
+
+/* GENRE */
+.genre_anime {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 0.5rem 0;
+}
+
+.list_genre_anime {
+  float: left;
+  height: 1.5rem;
+  width: 24%;
+  display: flex;
+  align-items: center;
+  background-color: var(--first-color);
+  margin: 0.5%;
+}
+
+.list_genre_anime:hover,
+.link_genre_anime:hover,
+.link_genre_anime:visited {
+  background-color: var(--first-color-lighter);
+}
+
+.link_genre_anime {
+  font-size: var(--smaller-font-size);
+  width: 100%;
+  text-align: center;
+  color: var(--title-color);
 }/*# sourceMappingURL=section.css.map */
