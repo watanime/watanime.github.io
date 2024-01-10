@@ -131,33 +131,93 @@ body.dark-theme {
   color: var(--text-color);
 }
 
-/* GENRE */
-.genre_anime {
+/* GENRE DAN SEASONS LIST */
+.genre_anime,
+.seasons_anime {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   padding: 0.5rem 0;
 }
 
-.list_genre_anime {
+.list_genre_anime,
+.list_seasons_anime {
   float: left;
-  height: 1.5rem;
+  height: 2rem;
   width: 24%;
   display: flex;
   align-items: center;
   background-color: var(--first-color);
   margin: 0.5%;
+  border-radius: 3px;
 }
 
 .list_genre_anime:hover,
 .link_genre_anime:hover,
+.link_genre_anime:visited,
+.list_seasons_anime:hover,
+.link_seasons_anime:hover,
 .link_genre_anime:visited {
   background-color: var(--first-color-lighter);
 }
 
-.link_genre_anime {
+.link_genre_anime,
+.link_seasons_anime {
   font-size: var(--smaller-font-size);
   width: 100%;
   text-align: center;
-  color: var(--title-color);
+  color: aliceblue;
+}
+
+/* DAFTAR ANIME */
+.title_anime {
+  font-size: var(--normal-font-size);
+}
+
+.wppAnime {
+  width: 100%;
+}
+
+.detail_info {
+  font-size: var(--smaller-font-size);
+  margin: 0.5rem 0;
+}
+
+.link_genre,
+.link_seasons {
+  color: var(--first-color-alt);
+}
+
+.link_genre:hover,
+.link_seasons:hover {
+  background-color: var(--first-color-lighter);
+}
+
+.sinopsis {
+  font-size: var(--smaller-font-size);
+  text-align: justify;
+}
+
+.list_episode {
+  font-size: var(--smaller-font-size);
+  margin: 0.5rem 0.5rem 2rem;
+  width: 100%;
+}
+
+.data_list_episode {
+  height: 1.3rem;
+  width: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.link_episode {
+  color: var(--first-color-alt);
+  width: inherit;
+  margin: 0 0.3rem;
+}
+
+.data_list_episode:hover,
+.link_episode:hover {
+  background-color: var(--first-color-lighter);
 }/*# sourceMappingURL=section.css.map */
