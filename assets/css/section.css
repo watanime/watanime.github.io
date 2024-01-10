@@ -14,7 +14,7 @@
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 85%);
-  --container-color: #fff;
+  --container-color: hsl(var(--hue-color), 100%, 89%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   /* Font and typography */
@@ -209,15 +209,111 @@ body.dark-theme {
   width: inherit;
   display: flex;
   align-items: center;
+  margin: 0 0.3rem;
 }
 
 .link_episode {
   color: var(--first-color-alt);
   width: inherit;
-  margin: 0 0.3rem;
 }
 
 .data_list_episode:hover,
 .link_episode:hover {
   background-color: var(--first-color-lighter);
+}
+
+/* VIDEO ANIME */
+.video_anime_container {
+  background-color: var(--container-color);
+  padding: 1rem 0;
+}
+
+.video_output {
+  display: flex;
+}
+
+.output_video {
+  width: 97%;
+  margin: auto;
+  text-align: center;
+}
+
+.nav_eps {
+  display: flex;
+  height: 2.2rem;
+}
+
+.list_nav_eps {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 22%;
+}
+
+.nav_seluruh_eps {
+  width: 34%;
+  text-align: center;
+}
+
+.select_eps {
+  font-size: var(--smaller-font-size);
+  width: 90%;
+  margin: 0.5rem auto 0;
+  background-color: transparent;
+  padding: 0.2rem;
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+  border: 1px solid var(--text-color);
+  border-radius: 0.2rem;
+}
+
+.link_nav_eps {
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+  border: 1px solid var(--text-color);
+  border-radius: 0.2rem;
+  margin: 0.5rem 0 0 0.3rem;
+  padding: 0.2rem 0;
+}
+
+.link_nav_eps:hover,
+.select_eps:hover {
+  background-color: var(--first-color-lighter);
+}
+
+/* EPISODE LAINNYA */
+.info_anime_container {
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--container-color);
+  padding: 0.5rem;
+}
+
+.info_anime_image {
+  margin: 0 0.5rem;
+  width: 100%;
+}
+
+.info_anime_kanan {
+  width: 100%;
+}
+
+.info_anime_detail {
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.info_anime_episode {
+  grid-column: 1/span 2;
+  margin: 0 0.5rem 0.5rem;
+  font-size: var(--small-font-size);
+  height: 8rem;
+  overflow: auto;
+}
+
+.info_list_episode {
+  height: 1rem;
+  margin: 0 0.5rem;
 }/*# sourceMappingURL=section.css.map */
