@@ -403,6 +403,7 @@ hr {
 /* FOOTER */
 .footer {
   padding-top: 2rem;
+  position: relative;
 }
 
 .footer_container {
@@ -410,8 +411,11 @@ hr {
 }
 
 .footer_bg {
+  position: absolute;
+  bottom: -15rem;
+  width: 100%;
   background-color: var(--first-color-second);
-  padding: 2rem 0 3rem;
+  padding: 2rem 0 5rem;
 }
 
 .footer_title {
