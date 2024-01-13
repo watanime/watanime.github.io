@@ -240,7 +240,7 @@ body.dark-theme {
 
 .output_video {
   width: 97%;
-  height: 219px;
+  max-width: 100%;
   margin: auto;
 }
 
