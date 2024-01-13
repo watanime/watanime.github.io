@@ -164,31 +164,64 @@ function scrollUp() {
 window.addEventListener("scroll", scrollUp);
 
 /* DARK LIGTH THEME */
-const themeButton = document.getElementById("theme-button"),
-  darkTheme = "dark-theme",
-  iconTheme = "uil-sun";
+// const themeButton = document.getElementById("theme-button"),
+//   darkTheme = "dark-theme",
+//   iconTheme = "uil-sun";
 
-//Previously selected topic (if user  selected)
-const selectedTheme = localStorage.getItem("selected-theme"),
-  selectedIcon = localStorage.getItem("selected-icon");
+// //Previously selected topic (if user  selected)
+// const selectedTheme = localStorage.getItem("selected-theme"),
+//   selectedIcon = localStorage.getItem("selected-icon");
 
-// We obtain the current theme that the interface has bt validating the dark-theme class
-const getCurrentTheme = () => (document.body.classList.contains(darkTheme) ? "dark" : "light"),
-  getCurrentIcon = () => (document.body.classList.contains(iconTheme) ? "uil-moon" : "uil-sun");
+// // We obtain the current theme that the interface has bt validating the dark-theme class
+// const getCurrentTheme = () => (document.body.classList.contains(darkTheme) ? "dark" : "light"),
+//   getCurrentIcon = () => (document.body.classList.contains(iconTheme) ? "uil-moon" : "uil-sun");
 
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
-  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
+// // We validate if the user previously chose a topic
+// if (selectedTheme) {
+//   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+//   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
+//   themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
+// }
+
+// // Activate / deactivate the theme manually with the button
+// themeButton.addEventListener("click", () => {
+//   // Add or remove the dark / icon theme
+//   document.body.classList.toggle(darkTheme);
+//   themeButton.classList.toggle(iconTheme);
+//   // We save the theme and the current icon that the user chose
+//   localStorage.setItem("selected-theme", getCurrentTheme);
+//   localStorage.setItem("selected-icon", getCurrentIcon);
+// });
+
+// Function to set dark mode
+function setDarkMode(isDarkMode) {
+  const body = document.body;
+  body.classList.toggle("dark-theme", isDarkMode);
+
+  // Change icon based on dark mode state
+  const iconTheme = document.getElementById("theme-button");
+  iconTheme.classList = isDarkMode ? "uil uil-sun change-theme" : "uil uil-moon change-theme";
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener("click", () => {
-  // Add or remove the dark / icon theme
-  document.body.classList.toggle(darkTheme);
-  themeButton.classList.toggle(iconTheme);
-  // We save the theme and the current icon that the user chose
-  localStorage.setItem("selected-theme", getCurrentTheme);
-  localStorage.setItem("selected-icon", getCurrentIcon);
-});
+// Function to toggle dark mode and save preference
+function toggleDarkMode() {
+  const body = document.body,
+    isDarkMode = body.classList.contains("dark-theme");
+
+  // Toggle dark mode
+  setDarkMode(!isDarkMode);
+
+  // Save preference to localStorage
+  localStorage.setItem("darkMode", !isDarkMode);
+}
+
+// Check for dark mode preference in localStorage
+const storedDarkMode = localStorage.getItem("darkMode");
+
+// If dark mode preference exists, set it
+if (storedDarkMode !== null) {
+  setDarkMode(storedDarkMode === "true");
+}
+
+// Set initial dark mode state based on localStorage
+setDarkMode(storedDarkMode === "true");

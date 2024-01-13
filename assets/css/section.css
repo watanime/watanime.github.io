@@ -176,6 +176,7 @@ body.dark-theme {
 
 .wppAnime {
   width: 100%;
+  margin: 0.5rem 0 0;
 }
 
 .detail_info {
@@ -200,21 +201,22 @@ body.dark-theme {
 
 .list_episode {
   font-size: var(--smaller-font-size);
-  margin: 0.5rem 0.5rem 2rem;
+  margin: 0.5rem 0 2rem;
   width: 100%;
 }
 
 .data_list_episode {
   height: 1.3rem;
-  width: inherit;
+  width: 100%;
   display: flex;
   align-items: center;
-  margin: 0 0.3rem;
+  padding: 0.7rem 0.5rem;
+  border: 1px solid var(--text-color);
 }
 
 .link_episode {
   color: var(--first-color-alt);
-  width: inherit;
+  width: 100%;
 }
 
 .data_list_episode:hover,
@@ -232,15 +234,21 @@ body.dark-theme {
   display: flex;
 }
 
+.iframe_video_output {
+  height: 100%;
+}
+
 .output_video {
   width: 97%;
+  height: 219px;
   margin: auto;
-  text-align: center;
 }
 
 .nav_eps {
-  display: flex;
-  height: 2.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  text-align: center;
 }
 
 .list_nav_eps {
@@ -248,17 +256,18 @@ body.dark-theme {
   text-align: center;
   display: flex;
   align-items: center;
-  width: 22%;
+  justify-content: center;
+  width: 100%;
 }
 
 .nav_seluruh_eps {
-  width: 34%;
+  grid-column: 1/span 3;
   text-align: center;
 }
 
 .select_eps {
   font-size: var(--smaller-font-size);
-  width: 90%;
+  width: 80%;
   margin: 0.5rem auto 0;
   background-color: transparent;
   padding: 0.2rem;
@@ -268,18 +277,29 @@ body.dark-theme {
   border-radius: 0.2rem;
 }
 
+.option_eps {
+  background-color: var(--container-color);
+}
+
 .link_nav_eps {
+  width: 80%;
+  height: 3rem;
   color: var(--text-color);
   font-weight: var(--font-semi-bold);
   border: 1px solid var(--text-color);
   border-radius: 0.2rem;
-  margin: 0.5rem 0 0 0.3rem;
-  padding: 0.2rem 0;
+  margin: 0.5rem 0 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
 }
 
 .link_nav_eps:hover,
-.select_eps:hover {
+.select_eps:hover,
+.option_eps:hover {
   background-color: var(--first-color-lighter);
+  color: var(--text-color);
 }
 
 /* EPISODE LAINNYA */
@@ -298,22 +318,26 @@ body.dark-theme {
   width: 100%;
 }
 
+.container_info_anime {
+  grid-column: 1/span 2;
+  margin: 0 0.5rem 0.5rem;
+  font-size: var(--small-font-size);
+}
+
 .info_anime_detail {
   font-size: var(--smaller-font-size);
   color: var(--title-color);
   margin-bottom: 0.5rem;
-  margin: 0 0.5rem 0 0;
+  margin: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .info_anime_episode {
-  grid-column: 1/span 2;
-  margin: 0 0.5rem 0.5rem;
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   height: 8rem;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .info_list_episode {
   height: 1rem;
-  margin: 0 0.5rem;
 }/*# sourceMappingURL=section.css.map */
