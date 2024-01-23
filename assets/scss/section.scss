@@ -1,9 +1,11 @@
 /* VARIABLES CSS */
 :root {
   --header-height: 3rem;
+
   /* COLOR */
   /* Change favorite color */
   --hue-color: 220; /* Purple 250 - Green 142 - Blue 230 - Pink 340 */
+
   /* HSL color Mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -17,8 +19,10 @@
   --container-color: hsl(var(--hue-color), 100%, 89%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
   /* Font and typography */
   --body-font: "Montserrat", sans-serif;
+
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -27,9 +31,11 @@
   --normal-font-size: 0.928rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
+
   /* Font weight */
   --font-medium: 500;
   --font-semi-bold: 600;
+
   /* Margenes Bottom */
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px */
   --mb-0-25: 0.25rem;
@@ -40,6 +46,7 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
+
   /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -58,6 +65,7 @@
     --smaller-font-size: 0.813rem;
   }
 }
+
 /* Variable Dark theme */
 body.dark-theme {
   /* HSL color Mode */
@@ -202,6 +210,8 @@ body.dark-theme {
 .list_episode {
   font-size: var(--smaller-font-size);
   margin: 0.5rem 0 2rem;
+  // height: 5rem;
+  // overflow: auto;
   width: 100%;
 }
 
@@ -261,7 +271,7 @@ body.dark-theme {
 }
 
 .nav_seluruh_eps {
-  grid-column: 1/span 3;
+  grid-column: 1 / span 3;
   text-align: center;
 }
 
@@ -319,7 +329,7 @@ body.dark-theme {
 }
 
 .container_info_anime {
-  grid-column: 1/span 2;
+  grid-column: 1 / span 2;
   margin: 0 0.5rem 0.5rem;
   font-size: var(--small-font-size);
 }
@@ -340,6 +350,7 @@ body.dark-theme {
 
 .info_list_episode {
   height: 1rem;
+  // margin: 0 0.5rem;
 }
 
 /* MEDIA QUERIES */
@@ -351,7 +362,10 @@ body.dark-theme {
     margin: 0.5%;
   }
 }
+
 /* For medium devices */
+@media screen and (min-width: 568px) {
+}
 @media screen and (min-width: 768px) {
   .header_list_nama,
   .link_list_nama_anime,
@@ -372,4 +386,4 @@ body.dark-theme {
     width: 11.5%;
     margin: 0.5%;
   }
-} /*# sourceMappingURL=section.css.map */
+} /*# sourceMappingURL=styles.css.map */

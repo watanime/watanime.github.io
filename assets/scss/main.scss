@@ -1,11 +1,14 @@
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
 /* VARIABLES CSS */
 :root {
   --header-height: 3rem;
+
   /* COLOR */
   /* Change favorite color */
   --hue-color: 220; /* Purple 250 - Green 142 - Blue 230 - Pink 340 */
+
   /* HSL color Mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -19,8 +22,10 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
   /* Font and typography */
   --body-font: "Montserrat", sans-serif;
+
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -29,9 +34,11 @@
   --normal-font-size: 0.928rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
+
   /* Font weight */
   --font-medium: 500;
   --font-semi-bold: 600;
+
   /* Margenes Bottom */
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px */
   --mb-0-25: 0.25rem;
@@ -42,6 +49,7 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
+
   /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -60,6 +68,7 @@
     --smaller-font-size: 0.813rem;
   }
 }
+
 /* Variable Dark theme */
 body.dark-theme {
   /* HSL color Mode */
@@ -508,18 +517,20 @@ hr {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+
   .nav_menu {
     padding: 2rem 0.25rem 4rem;
   }
   .nav_list {
-    -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
   }
+
   .ongoing_card_container {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem 3rem;
   }
 }
+
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .ongoing_card_container {
@@ -614,4 +625,4 @@ hr {
   .ongoing_card_container {
     grid-template-columns: repeat(6, 1fr);
   }
-} /*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=styles.css.map */

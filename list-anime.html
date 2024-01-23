@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Watanime - List Anime Subtitle Indonesia | Watanime" />
     <title>List Anime | Watanime</title>
+    <link rel="shortcut icon" href="assets/icon-logo.png" type="image/x-icon" />
 
     <!-- UNICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/section.css" />
     <link rel="stylesheet" href="assets/css/section.css" />
   </head>
   <body>
@@ -30,8 +32,8 @@
       <!-- AKHIR HOME -->
 
       <!-- NAVIGATION -->
-      <nav class="nav" id="nav">
-        <div class="nav_container container">
+      <header class="header" id="header">
+        <nav class="nav container">
           <a href="#" class="nav_logo">WATANIME</a>
 
           <div class="nav_menu" id="nav-menu">
@@ -69,8 +71,8 @@
               <i class="uil uil-apps"></i>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
       <!-- AKHIR NAVIGATION -->
 
       <!-- ANIME LIST -->
@@ -82,6 +84,11 @@
 
         <div class="anime_list_container container">
           <ul class="nav_anime_list">
+            <li class="list_nav">
+              <a href="#e" class="link_nav_list">E</a>
+            </li>
+            <span class="span_nav">|</span>
+
             <li class="list_nav">
               <a href="#j" class="link_nav_list">J</a>
             </li>
@@ -134,7 +141,7 @@
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
             <li class="list_huruf_abjad">
-              <h4 class="header_list_nama">E</h4>
+              <h4 class="header_list_nama" id="e">E</h4>
               <hr class="garis_bawah garis_list_anime" />
               <ul class="list_nama_anime"></ul>
               <hr class="garis_atas_bawah garis_list_anime" />
