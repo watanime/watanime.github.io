@@ -368,7 +368,7 @@ hr {
 
 /* ON GOING */
 .ongoing_card_container {
-  grid-template-columns: repeat(3, minmax(0%, 50%));
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto, 280px);
   padding: 1rem 0;
 }
@@ -527,7 +527,6 @@ hr {
 
   .ongoing_card_container {
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem 3rem;
   }
 }
 
