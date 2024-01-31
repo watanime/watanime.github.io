@@ -206,17 +206,18 @@ body.dark-theme {
 }
 
 .data_list_episode {
-  height: 1.3rem;
   width: 100%;
   display: flex;
-  align-items: center;
-  padding: 0.7rem 0.5rem;
   border: 1px solid var(--text-color);
 }
 
 .link_episode {
+  padding: 0.5rem;
   color: var(--first-color-alt);
   width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
 }
 
 .data_list_episode:hover,
@@ -338,10 +339,6 @@ body.dark-theme {
   overflow-x: hidden;
 }
 
-.info_list_episode {
-  height: 1rem;
-}
-
 /* MEDIA QUERIES */
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -363,6 +360,25 @@ body.dark-theme {
   .info_anime_detail,
   .container_info_anime {
     font-size: var(--normal-font-size);
+  }
+  .info_anime_container {
+    grid-template-areas: "img ul" "img eps";
+    padding: 1rem;
+  }
+  .info_anime_image {
+    grid-area: img;
+    width: 190px;
+    margin: 0 auto;
+  }
+  .info_anime_kanan {
+    grid-area: ul;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container_info_anime {
+    grid-area: eps;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 /* For large devices */

@@ -1,0 +1,7 @@
+Watanime 1.0
+Menambahkan jumlah episode di index.html dan stylenya
+Menambahkan episode solo leveling 2 dan 3
+Merubah tampilan pc di info_anime_container dan seisinya
+Menambahkan episode one piece 1090 dan 1091
+Merubah logo link dalam navigation menjadi ke index.html
+Menambahkan halaman genre action, adventure, cars, comedy, crime

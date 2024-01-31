@@ -370,8 +370,20 @@ hr {
   position: relative;
 }
 
-.link_card_ongoing:hover {
+.link_card_ongoing:hover .anime_title_section,
+.link_card_ongoing:hover .anime_eps_section {
   background-color: var(--title-color);
+  opacity: 1;
+  transition: 0.3s;
+}
+.link_card_ongoing:hover .anime_title,
+.link_card_ongoing:hover .eps_anime_ongoing {
+  transition: 0.3s;
+  color: var(--first-color);
+}
+.link_card_ongoing:hover .poster_anime {
+  transition: 0.3s;
+  opacity: 0.5;
 }
 
 .poster_anime {
@@ -394,8 +406,26 @@ hr {
 }
 
 .anime_title {
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
   font-weight: 900;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  text-align: center;
+}
+
+.anime_eps_section {
+  position: absolute;
+  top: 0;
+  background-color: var(--body-color);
+  opacity: 0.75;
+  align-items: center;
+  display: flex;
+}
+
+.eps_anime_ongoing {
+  font-size: var(--smaller-font-size);
+  padding: 0.3rem;
   overflow: hidden;
   text-overflow: ellipsis;
   text-wrap: nowrap;
@@ -584,6 +614,12 @@ hr {
   }
   .ongoing_card_container {
     grid-template-columns: repeat(5, 1fr);
+  }
+  .anime_title {
+    font-size: var(--normal-font-size);
+  }
+  .eps_anime_ongoing {
+    font-size: var(--small-font-size);
   }
   .footer_container {
     grid-template-columns: repeat(3, 1fr);
