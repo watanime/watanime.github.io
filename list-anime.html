@@ -11,15 +11,14 @@
     <!-- UNICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 
+    <!-- MY CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/section.css" />
-    <link rel="stylesheet" href="assets/css/section.css" />
   </head>
   <body>
     <!-- MAIN -->
     <main class="main">
       <!-- HOME -->
-      <section class="home section" id="home">
+      <section class="home section">
         <div class="home_container container grid">
           <div class="home_content grid">
             <div class="home_data">
@@ -33,45 +32,19 @@
 
       <!-- NAVIGATION -->
       <header class="header" id="header">
-        <nav class="nav container">
-          <a href="#" class="nav_logo">WATANIME</a>
-
-          <div class="nav_menu" id="nav-menu">
-            <ul class="nav_list grid">
-              <li class="nav_item">
-                <a href="index.html" class="nav_link"><i class="uil uil-estate nav_icon"></i>Home</a>
-              </li>
-              <li class="nav_item">
-                <a href="#" class="nav_link active-link"><i class="uil uil-list-ul nav_icon"></i>Anime List</a>
-              </li>
-              <li class="nav_item">
-                <a href="genres.html" class="nav_link"><i class="uil uil-nerd nav_icon"></i>Genre</a>
-              </li>
-              <li class="nav_item">
-                <a href="seasons-list.html" class="nav_link"><i class="uil uil-calender nav_icon"></i>Tahun Rilis</a>
-              </li>
-              <li class="nav_item">
-                <a href="#" class="nav_link"><i class="uil uil-search nav_icon"></i>Search</a>
-                <!-- <div class="search">
-                <form class="search" action="search.html">
-                  <input id="search" type="text" name="q" placeholder="Cari anime disini..." autocomplete="off" class="navatv" data-ddg-inputtype="unknown" /><span class="scx hide" id="scx" style="display: inline">×</span>
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-              </div> -->
-              </li>
-            </ul>
-            <i class="uil uil-times nav_close" id="nav-close"></i>
-          </div>
-
-          <div class="nav_btns">
-            <!-- Theme change button -->
-            <i class="uil uil-moon change-theme" id="theme-button" onclick="toggleDarkMode()"></i>
-
-            <div class="nav_toggle" id="nav-toggle">
-              <i class="uil uil-apps"></i>
-            </div>
-          </div>
-        </nav>
+        <script>
+          window.addEventListener("DOMContentLoaded", function () {
+            var navigation = document.getElementById("header");
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "assets/html/nav.html", true);
+            xhr.onreadystatechange = function () {
+              if (xhr.readyState === 4 && xhr.status === 200) {
+                navigation.innerHTML = xhr.responseText;
+              }
+            };
+            xhr.send();
+          });
+        </script>
       </header>
       <!-- AKHIR NAVIGATION -->
 
@@ -85,55 +58,204 @@
         <div class="anime_list_container container">
           <ul class="nav_anime_list">
             <li class="list_nav">
-              <a href="#e" class="link_nav_list">E</a>
+              <a href="#a" class="link_nav_list">A</a>
+              <span class="span_nav">|</span>
             </li>
-            <span class="span_nav">|</span>
+
+            <li class="list_nav">
+              <a href="#b" class="link_nav_list">B</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#c" class="link_nav_list">C</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#d" class="link_nav_list">D</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#e" class="link_nav_list">E</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#f" class="link_nav_list">F</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#g" class="link_nav_list">G</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#h" class="link_nav_list">H</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#i" class="link_nav_list">I</a>
+              <span class="span_nav">|</span>
+            </li>
 
             <li class="list_nav">
               <a href="#j" class="link_nav_list">J</a>
+              <span class="span_nav">|</span>
             </li>
-            <span class="span_nav">|</span>
+
+            <li class="list_nav">
+              <a href="#k" class="link_nav_list">K</a>
+              <span class="span_nav">|</span>
+            </li>
+
             <li class="list_nav">
               <a href="#l" class="link_nav_list">L</a>
+              <span class="span_nav">|</span>
             </li>
-            <span class="span_nav">|</span>
-            <li class="_ist_nav">
+
+            <li class="list_nav">
+              <a href="#m" class="link_nav_list">M</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
               <a href="#n" class="link_nav_list">N</a>
+              <span class="span_nav">|</span>
             </li>
-            <span class="span_nav">|</span>
+
             <li class="list_nav">
               <a href="#o" class="link_nav_list">O</a>
+              <span class="span_nav">|</span>
             </li>
-            <span class="span_nav">|</span>
+
+            <li class="list_nav">
+              <a href="#p" class="link_nav_list">P</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#q" class="link_nav_list">Q</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#r" class="link_nav_list">R</a>
+              <span class="span_nav">|</span>
+            </li>
+
             <li class="list_nav">
               <a href="#s" class="link_nav_list">S</a>
+              <span class="span_nav">|</span>
             </li>
-            <span class="span_nav">|</span>
+
+            <li class="list_nav">
+              <a href="#t" class="link_nav_list">T</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#u" class="link_nav_list">U</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#v" class="link_nav_list">V</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#w" class="link_nav_list">W</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#x" class="link_nav_list">X</a>
+              <span class="span_nav">|</span>
+            </li>
+
             <li class="list_nav">
               <a href="#y" class="link_nav_list">Y</a>
+              <span class="span_nav">|</span>
+            </li>
+
+            <li class="list_nav">
+              <a href="#z" class="link_nav_list">Z</a>
             </li>
           </ul>
           <hr class="garis_height_3 garis_bawah" />
 
           <ul class="anime_list">
+            <!-- A -->
             <li class="list_huruf_abjad">
-              <h4 class="header_list_nama">A</h4>
+              <h4 class="header_list_nama" id="a">A</h4>
               <hr class="garis_bawah garis_list_anime" />
-              <ul class="list_nama_anime"></ul>
+              <ul class="list_nama_anime" id="anime-a">
+                <script>
+                  window.addEventListener("DOMContentLoaded", function () {
+                    var animeA = document.getElementById("anime-a");
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "assets/html/anime-list/anime-list-a.html", true);
+                    xhr.onreadystatechange = function () {
+                      if (xhr.readyState === 4 && xhr.status === 200) {
+                        animeA.innerHTML = xhr.responseText;
+                      }
+                    };
+                    xhr.send();
+                  });
+                </script>
+              </ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
+            <!-- B -->
             <li class="list_huruf_abjad">
               <h4 class="header_list_nama">B</h4>
               <hr class="garis_bawah garis_list_anime" />
-              <ul class="list_nama_anime"></ul>
+              <ul class="list_nama_anime" id="anime-b">
+                <script>
+                  window.addEventListener("DOMContentLoaded", function () {
+                    var animeB = document.getElementById("anime-b");
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "assets/html/anime-list/anime-list-b.html", true);
+                    xhr.onreadystatechange = function () {
+                      if (xhr.readyState === 4 && xhr.status === 200) {
+                        animeB.innerHTML = xhr.responseText;
+                      }
+                    };
+                    xhr.send();
+                  });
+                </script>
+              </ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
+            <!-- C -->
             <li class="list_huruf_abjad">
               <h4 class="header_list_nama">C</h4>
               <hr class="garis_bawah garis_list_anime" />
-              <ul class="list_nama_anime"></ul>
+              <ul class="list_nama_anime" id="anime-c">
+                <script>
+                  window.addEventListener("DOMContentLoaded", function () {
+                    var animeC = document.getElementById("anime-c");
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "assets/html/anime-list/anime-list-c.html", true);
+                    xhr.onreadystatechange = function () {
+                      if (xhr.readyState === 4 && xhr.status === 200) {
+                        animeC.innerHTML = xhr.responseText;
+                      }
+                    };
+                    xhr.send();
+                  });
+                </script>
+              </ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
+            <!-- D -->
             <li class="list_huruf_abjad">
               <h4 class="header_list_nama">D</h4>
               <hr class="garis_bawah garis_list_anime" />
@@ -180,10 +302,26 @@
               </ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
+            <!-- K -->
             <li class="list_huruf_abjad">
-              <h4 class="header_list_nama">K</h4>
+              <h4 class="header_list_nama" id="k">K</h4>
               <hr class="garis_bawah garis_list_anime" />
-              <ul class="list_nama_anime"></ul>
+              <ul class="list_nama_anime" id="anime-k">
+                <script>
+                  window.addEventListener("DOMContentLoaded", function () {
+                    var animeK = document.getElementById("anime-k");
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "assets/html/anime-list/anime-list-k.html", true);
+                    xhr.onreadystatechange = function () {
+                      if (xhr.readyState === 4 && xhr.status === 200) {
+                        animeK.innerHTML = xhr.responseText;
+                      }
+                    };
+                    xhr.send();
+                  });
+                </script>
+              </ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
             <li class="list_huruf_abjad">
@@ -208,16 +346,29 @@
               </ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
+            <!-- O -->
             <li class="list_huruf_abjad">
               <h4 class="header_list_nama" id="o">O</h4>
               <hr class="garis_bawah garis_list_anime" />
-              <ul class="list_nama_anime">
-                <li>
-                  <a href="anime/onepiece/onepiece-subtitle-indonesia.html" class="link_list_nama_anime">One Piece</a>
-                </li>
+              <ul class="list_nama_anime" id="anime-o">
+                <script>
+                  window.addEventListener("DOMContentLoaded", function () {
+                    var animeO = document.getElementById("anime-o");
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "assets/html/anime-list/anime-list-o.html", true);
+                    xhr.onreadystatechange = function () {
+                      if (xhr.readyState === 4 && xhr.status === 200) {
+                        animeO.innerHTML = xhr.responseText;
+                      }
+                    };
+                    xhr.send();
+                  });
+                </script>
               </ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
             <li class="list_huruf_abjad">
               <h4 class="header_list_nama">P</h4>
               <hr class="garis_bawah garis_list_anime" />
@@ -236,16 +387,29 @@
               <ul class="list_nama_anime"></ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
+            <!-- S -->
             <li class="list_huruf_abjad">
-              <h4 class="header_list_nama">S</h4>
+              <h4 class="header_list_nama" id="s">S</h4>
               <hr class="garis_bawah garis_list_anime" />
-              <ul class="list_nama_anime">
-                <li>
-                  <a href="anime/sololeveling/sololeveling-subtitle-indonesia.html" class="link_list_nama_anime">Solo Leveling</a>
-                </li>
+              <ul class="list_nama_anime" id="anime-s">
+                <script>
+                  window.addEventListener("DOMContentLoaded", function () {
+                    var animeS = document.getElementById("anime-s");
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "assets/html/anime-list/anime-list-s.html", true);
+                    xhr.onreadystatechange = function () {
+                      if (xhr.readyState === 4 && xhr.status === 200) {
+                        animeS.innerHTML = xhr.responseText;
+                      }
+                    };
+                    xhr.send();
+                  });
+                </script>
               </ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
             <li class="list_huruf_abjad">
               <h4 class="header_list_nama">T</h4>
               <hr class="garis_bawah garis_list_anime" />
@@ -276,16 +440,29 @@
               <ul class="list_nama_anime"></ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
+            <!-- Y -->
             <li class="list_huruf_abjad">
               <h4 class="header_list_nama" id="y">Y</h4>
               <hr class="garis_bawah garis_list_anime" />
-              <ul class="list_nama_anime">
-                <li>
-                  <a href="anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-subtitle-indonesia.html" class="link_list_nama_anime">Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e S3</a>
-                </li>
+              <ul class="list_nama_anime" id="anime-y">
+                <script>
+                  window.addEventListener("DOMContentLoaded", function () {
+                    var animeY = document.getElementById("anime-y");
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "assets/html/anime-list/anime-list-y.html", true);
+                    xhr.onreadystatechange = function () {
+                      if (xhr.readyState === 4 && xhr.status === 200) {
+                        animeY.innerHTML = xhr.responseText;
+                      }
+                    };
+                    xhr.send();
+                  });
+                </script>
               </ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
             <li class="list_huruf_abjad">
               <h4 class="header_list_nama">Z</h4>
               <hr class="garis_bawah garis_list_anime" />
@@ -300,51 +477,22 @@
     <!-- AKHIR MAIN -->
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer_bg">
-        <div class="footer_container container grid">
-          <div>
-            <h1 class="footer_title">WATANIME</h1>
-            <span class="footer_subtitle">Nonton Anime Subtitle Indonesia</span>
-          </div>
-
-          <!-- <ul class="footer_links">
-            <li>
-              <a href="#services" class="footer_links">Services</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer_links">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer_links">Contactme</a>
-            </li>
-          </ul> -->
-
-          <!-- <div class="footer_socials">
-            <a href="#" target="_blank" class="footer_socials">
-              <i class="uil uil-facebook-f"></i>
-            </a>
-            <a href="#" target="_blank" class="footer_socials">
-              <i class="uil uil-instagram"></i>
-            </a>
-            <a href="#" target="_blank" class="footer_socials">
-              <i class="uil uil-twitter-alt"></i>
-            </a>
-          </div> -->
-        </div>
-
-        <p class="footer_copy">&#169; Watanime. All right reserved</p>
-      </div>
-    </footer>
+    <div id="section-footer">
+      <script>
+        window.addEventListener("DOMContentLoaded", function () {
+          var footer = document.getElementById("section-footer");
+          var xhr = new XMLHttpRequest();
+          xhr.open("GET", "assets/html/footer.html", true);
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              footer.innerHTML = xhr.responseText;
+            }
+          };
+          xhr.send();
+        });
+      </script>
+    </div>
     <!-- AKHIR FOOTER -->
-
-    <!-- SCROLL TOP -->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup_icon"></i>
-    </a>
-
-    <!-- SWIPER JS -->
-    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>

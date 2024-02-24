@@ -1,7 +1,21 @@
 Watanime 1.0
-Menambahkan jumlah episode di index.html dan stylenya
-Menambahkan episode solo leveling 2 dan 3
-Merubah tampilan pc di info_anime_container dan seisinya
-Menambahkan episode one piece 1090 dan 1091
-Merubah logo link dalam navigation menjadi ke index.html
-Menambahkan halaman genre action, adventure, cars, comedy, crime
+- Menambahkan jumlah episode di index.html dan stylenya
+- Menambahkan episode solo leveling 2 dan 3
+- Merubah tampilan pc di info_anime_container dan seisinya
+- Menambahkan episode one piece 1090 dan 1091
+- Merubah logo link dalam navigation menjadi ke index.html
+- Menambahkan halaman genre action, adventure, cars, comedy, crime
+
+Watanime 1.01
+- Mengganti link dalam logo navigation menjadi index.html di genre, list-anime, seasons-list, youkoso home dan eps 1, ao-no-exorcist home
+- Merubah tampilan ongoing card di devices normal dari 3 bagian menjadi 2 bagian
+- Merubah font-size di tampilan anime ongoing card dari small menjadi normal
+- Menambahkan max-width di anime_eps_section dengan value 90%
+- Merubah nilai text-wrap di eps_anime_ongoing dengan value nowrap menjadi wrap
+- Menghapus ongoing_card_container dalam small devices
+- Menambahkan font-size di anime_title dalam small devices dengan value small
+
+Watanime 1.02
+- Menghapus semua navigation dan footer dan menjadikannya external di assets/html dan semua halaman html mengambilnya dari sana
+- Mengganti p.sinopsis menjadi div.sinopsis dan didalamanya ada tag p serta merubah di main.scss
+- Menambahkan anime Kimi no Na wa
