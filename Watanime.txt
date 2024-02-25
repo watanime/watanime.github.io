@@ -19,3 +19,6 @@ Watanime 1.02
 - Menghapus semua navigation dan footer dan menjadikannya external di assets/html dan semua halaman html mengambilnya dari sana
 - Mengganti p.sinopsis menjadi div.sinopsis dan didalamanya ada tag p serta merubah di main.scss
 - Menambahkan anime Kimi no Na wa
+
+Watanime 1.02 (Up Anime)
+- Menambahkan anime Tenki no ko
