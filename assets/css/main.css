@@ -703,9 +703,8 @@ hr {
 
 .output_video {
   width: 97%;
-  height: 50vw;
-  max-width: 100%;
   margin: auto;
+  aspect-ratio: 16/9;
 }
 
 .nav_eps {
