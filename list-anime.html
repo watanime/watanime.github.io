@@ -410,12 +410,28 @@
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
 
+            <!-- T -->
             <li class="list_huruf_abjad">
-              <h4 class="header_list_nama">T</h4>
+              <h4 class="header_list_nama" id="t">T</h4>
               <hr class="garis_bawah garis_list_anime" />
-              <ul class="list_nama_anime"></ul>
+              <ul class="list_nama_anime" id="anime-t">
+                <script>
+                  window.addEventListener("DOMContentLoaded", function () {
+                    var animeT = document.getElementById("anime-t");
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "assets/html/anime-list/anime-list-t.html", true);
+                    xhr.onreadystatechange = function () {
+                      if (xhr.readyState === 4 && xhr.status === 200) {
+                        animeT.innerHTML = xhr.responseText;
+                      }
+                    };
+                    xhr.send();
+                  });
+                </script>
+              </ul>
               <hr class="garis_atas_bawah garis_list_anime" />
             </li>
+
             <li class="list_huruf_abjad">
               <h4 class="header_list_nama">U</h4>
               <hr class="garis_bawah garis_list_anime" />

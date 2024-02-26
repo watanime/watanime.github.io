@@ -20,5 +20,9 @@ Watanime 1.02
 - Mengganti p.sinopsis menjadi div.sinopsis dan didalamanya ada tag p serta merubah di main.scss
 - Menambahkan anime Kimi no Na wa
 
-Watanime 1.02 (Up Anime)
-- Menambahkan anime Tenki no ko
+Watanime 1.02 (Up Anime 0.01)
+- Menambahkan anime Tenki no Ko
+
+Watanime 1.02 (Up Anime 0.02)
+- Menambahkan episode one piece 1092 1093 1094 dan 1095
+- Mengganti "height: 50vw;" di .outoput_video menjadi "aspect-ration: 16/9;"
