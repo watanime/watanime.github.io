@@ -25,4 +25,10 @@ Watanime 1.02 (Up Anime 0.01)
 
 Watanime 1.02 (Up Anime 0.02)
 - Menambahkan episode one piece 1092 1093 1094 dan 1095
-- Mengganti "height: 50vw;" di .outoput_video menjadi "aspect-ration: 16/9;"
+- Mengganti "height: 50vw;" di .outoput_video menjadi "aspect-ratio: 16/9;"
+
+Watanime 1.02 (Up Anime 0.03)
+- Memindahkan "font-size: var(--smaller-font-size); text-align: justify;" dari tag p ke tag parentnya tag div class sinopsis
+- Mengganti "margin: 0.5rem 0 2rem;" di .list_episode menjadi "margin: 1rem 0 2rem;"
+- Menambahkan "list-style-type: disc; list-style-position: outside;" di .list_nama_anime untuk memberikan type list untuk membedakan setiap judul anime
+- Menambah serial Avatar: The Last Airbender Live Action 8 Episode
