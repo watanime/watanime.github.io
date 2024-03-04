@@ -598,6 +598,8 @@ hr {
 }
 
 .list_nama_anime {
+  list-style-type: disc;
+  list-style-position: outside;
   margin: 0 0 0 1rem;
 }
 
@@ -670,9 +672,9 @@ hr {
 }
 
 .sinopsis {
+  font-size: var(--smaller-font-size);
+  text-align: justify;
   p {
-    font-size: var(--smaller-font-size);
-    text-align: justify;
     text-indent: 1rem;
     margin-bottom: 0.5rem;
   }
@@ -680,7 +682,7 @@ hr {
 
 .list_episode {
   font-size: var(--smaller-font-size);
-  margin: 0.5rem 0 2rem;
+  margin: 1rem 0 2rem;
   // height: 5rem;
   // overflow: auto;
   width: 100%;
